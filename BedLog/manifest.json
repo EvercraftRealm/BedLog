@@ -1,0 +1,35 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Bedrock Logging Framework",
+    "description": "Persistent logging API and operator log viewer",
+    "uuid": "864499b1-3fd7-4fd1-9e40-d5c5a3306b45",
+    "version": [0, 1, 1],
+    "min_engine_version": [1, 26, 60]
+  },
+  "modules": [
+    {
+      "description": "BedLog scripting runtime",
+      "type": "script",
+      "language": "javascript",
+      "uuid": "31d44783-6408-491f-8678-886fb6527be9",
+      "version": [0, 1, 1],
+      "entry": "scripts/main.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "module_name": "@minecraft/server",
+      "version": "2.11.0"
+    },
+    {
+      "module_name": "@minecraft/server-ui",
+      "version": "2.2.0"
+    }
+  ],
+  "metadata": {
+    "authors": ["Ethernym"],
+    "product_type": "addon"
+  }
+}
+

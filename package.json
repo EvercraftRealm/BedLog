@@ -1,0 +1,16 @@
+{
+  "name": "bedlog",
+  "version": "0.1.1",
+  "private": true,
+  "type": "module",
+  "description": "Bedrock logging framework and operator log viewer",
+  "scripts": {
+    "test": "node --experimental-loader ./tests/minecraft-loader.mjs --test tests/*.test.js",
+    "validate": "node tools/validate.mjs",
+    "package": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/package.ps1"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
+
